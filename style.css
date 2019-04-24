@@ -1,5 +1,7 @@
-.jumbotron {background-color: #414141;}
-.display-4 {color: white;}
+.jumbotron {background-image:linear-gradient(-90deg, red, #00d0ff)}
+.display-4, .gameMessage {color: white;}
+
+.gameMessage {font-weight: 100;}
 
 .player-card {float: left; border: 0;}
 .computer-card {float: right; border: 0;}
@@ -25,3 +27,10 @@
     align-items: center;
     font-size: 4em;
 }
+
+/* buttons */
+button#rock{background-color:#2ea8ff; border-color: #2ea8ff; }
+button#scissors{background-color:#db3030 !important; border-color: #db3030 !important; }
+
+
+

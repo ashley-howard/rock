@@ -61,13 +61,13 @@ buttons.forEach((button) => {
 function computerPlay() {
   let random = Math.random();
   if (random <= 0.33) {
-    computerPick.innerHTML = "<img src=\"img/c-rock.gif\" width=\"348px\" height=\"430px\">";
+    computerPick.innerHTML = "<img src=\"img/c-rock.jpg\" width=\"500px\" height=\"300px\">";
     return "Rock";}
   else if (random <= 0.66) {
-    computerPick.innerHTML = "<img src=\"img/c-paper.gif\" width=\"348px\" height=\"430px\">";
+    computerPick.innerHTML = "<img src=\"img/c-paper.jpg\" width=\"500px\" height=\"300px\">";
     return "Paper";}
   else {
-    computerPick.innerHTML = "<img src=\"img/c-scissors.gif\" width=\"348px\" height=\"430px\">";
+    computerPick.innerHTML = "<img src=\"img/c-scissors.jpg\" width=\"500px\" height=\"300px\">";
     return "Scissors";
  }
 }
@@ -77,13 +77,13 @@ function singleRound(Select, computerSelection) {
   playerSelection = Select.toUpperCase();
 
     if (playerSelection === "ROCK"){
-        playerPick.innerHTML = "<img src=\"img/p-rock.gif\" width=\"348px\" height=\"430px\">";
+        playerPick.innerHTML = "<img src=\"img/p-rock.jpg\" width=\"500px\" height=\"300px\">";
     }
     else if (playerSelection === "PAPER"){
-        playerPick.innerHTML = "<img src=\"img/p-paper.gif\" width=\"348px\" height=\"430px\">";
+        playerPick.innerHTML = "<img src=\"img/p-paper.jpg\" width=\"500px\" height=\"300px\">";
     } 
     else if (playerSelection === "SCISSORS"){
-        playerPick.innerHTML = "<img src=\"img/p-scissors.gif\" width=\"348px\" height=\"430px\">";
+        playerPick.innerHTML = "<img src=\"img/p-scissors.jpg\" width=\"500px\" height=\"300px\">";
     } 
     
 
@@ -92,12 +92,12 @@ function singleRound(Select, computerSelection) {
     lose();
     return "You Lost! Paper beats Rock";}
   else if (playerSelection == "PAPER" && computerSelection == "Paper") {
-    return "That's a paper draw";}
+    return "It's a draw";}
   else if (playerSelection == "SCISSORS" && computerSelection == "Paper") {
     win();
     return "You Win! Scissors beats Paper";}
   else if (playerSelection == "ROCK" && computerSelection == "Rock") {
-    return "That's a rock draw";}
+    return "It's a draw";}
   else if (playerSelection == "PAPER" && computerSelection == "Rock") {
     win();
     return "You Win! Paper beats Rock";}
@@ -111,7 +111,7 @@ function singleRound(Select, computerSelection) {
     lose();
     return "You Lost! Scissors beats Paper";}
   else if (playerSelection == "SCISSORS" && computerSelection == "Scissors") {
-    return "That's a Scissors draw"}
+    return "It's a draw"}
   else {
     return "Something went wrong..."}
 }
